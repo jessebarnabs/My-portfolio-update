@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jesse Barnabs</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <nav id="nav">
+      <button class="menu-btn" id="menuBtn" type="button" aria-label="Menu">&#9776;</button>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <h1>Jesse Barnabs</h1>
+    <p id="greeting">Welcome to my portfolio!</p>
+  </header>
+
+  <main>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>Hi, I'm Jesse. I'm an IT student at Africa International University, learning web development and Python.</p>
+    </section>
+
+    <section id="projects">
+      <h2>My Projects</h2>
+      <div class="cards" id="cards">
+        <div class="card">
+          <h3>Project 1: PostgreSQL Database</h3>
+          <p>A database built and managed in pgAdmin 4.</p>
+        </div>
+        <div class="card">
+          <h3>Project 2: Bank Account System</h3>
+          <p>A Python program using classes and objects to deposit, withdraw and check a balance.</p>
+        </div>
+        <div class="card">
+          <h3>Project 3: Campus Lost and Found</h3>
+          <p>A web system for reporting and claiming lost items. Currently at the proposal stage.</p>
+        </div>
+      </div>
+      <button class="btn" id="moreBtn" type="button">Show more projects</button>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <p>Email: <a href="mailto:jessebarnabs369@gmail.com">jessebarnabs369@gmail.com</a></p>
+
+      <form id="form" novalidate>
+        <label for="name">Name</label>
+        <input id="name" type="text">
+
+        <label for="email">Email</label>
+        <input id="email" type="email">
+
+        <label for="message">Message</label>
+        <textarea id="message" rows="4"></textarea>
+
+        <button class="btn" type="submit">Send</button>
+        <p id="msg" role="status"></p>
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year">2026</span> Jesse Barnabs</p>
+  </footer>
+
+</body>
+</html>
